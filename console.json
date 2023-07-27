@@ -1,11 +1,17 @@
 {
-    "service": true,
+    "service": 
+        {
+            "On": true,
+            "CloseReason": "由于某些不可抗拒的因素，本软件只能走到这里了，以后将不会继续提供服务。感谢大家的支持，望后会有期，再见！"
+        },
     "PackageName": "xyz.gkcoll.gfw.protester",
     "update": 
     {
         "Force": false,
         "BuildVersion": 1,
         "VersionName": "1.0",
+        "Release": "https://www.gkcoll.xyz",
+        "OpenSource": "https://gitee.com/gkcoll/celestial-empire-lan-launcher",
         "ChangeLog": "首个版本发布。"
     }
 }
