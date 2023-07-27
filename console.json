@@ -1,11 +1,11 @@
 {
-    "service": 
+    "Service": 
         {
             "On": true,
             "CloseReason": "由于某些不可抗拒的因素，本软件只能走到这里了，以后将不会继续提供服务。感谢大家的支持，望后会有期，再见！"
         },
     "PackageName": "xyz.gkcoll.gfw.protester",
-    "update": 
+    "Update": 
     {
         "Force": false,
         "BuildVersion": 1,
