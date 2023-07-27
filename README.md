@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Celestial Local Area Network (LAN) Launcher.
+Celestial Empire Local Area Network (LAN) Launcher.
 
 This project is not a virus, just for MOCKING CELESTIAL EMPIRE'S NET SELF-ISOLATION BEHAVIOR.
 
