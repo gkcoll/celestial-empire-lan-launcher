@@ -10,6 +10,7 @@
         "Force": false,
         "BuildVersion": 1,
         "VersionName": "1.0",
+        "Time": "2023.07.27",
         "Release": "https://www.gkcoll.xyz",
         "OpenSource": "https://gitee.com/gkcoll/celestial-empire-lan-launcher",
         "ChangeLog": "首个版本发布。"
