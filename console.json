@@ -1,0 +1,11 @@
+{
+    "service": true,
+    "PackageName": "xyz.gkcoll.gfw.protester",
+    "update": 
+    {
+        "Force": false,
+        "BuildVersion": 1,
+        "VersionName": "1.0",
+        "ChangeLog": "首个版本发布。"
+    }
+}
