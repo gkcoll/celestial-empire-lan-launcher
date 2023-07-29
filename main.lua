@@ -17,7 +17,7 @@ function exit()
 end
 
 function onService()
-  Http.get("https://gitee.com/gkcoll/celestial-empire-lan-launcher/raw/master/console.json", function(c,r)
+  Http.get("https://cdn.gkcoll.xyz/Celestial-Empire-LAN-Launcher/console.json", function(c,r)
     if c == 200 then
       data = cjson.decode(r)
       if data.Service.On then
@@ -52,7 +52,7 @@ function in_cn()
 end
 
 function set_str()
-  Http.get("https://gitee.com/gkcoll/celestial-empire-lan-launcher/raw/master/message.json", function(c,r)
+  Http.get("https://cdn.gkcoll.xyz/Celestial-Empire-LAN-Launcher/message.json", function(c,r)
     if c == 200 then
       data=cjson.decode(r)
       notice.setText(data.notice)
@@ -146,7 +146,7 @@ function checkUpdate()
   end}
   check_update_dialog.show()
 
-  Http.get("https://gitee.com/gkcoll/celestial-empire-lan-launcher/raw/master/console.json",function(code,resp)
+  Http.get("https://cdn.gkcoll.xyz/Celestial-Empire-LAN-Launcher/console.json",function(code,resp)
     data=cjson.decode(resp)
     check_update_dialog.hide()
 
@@ -324,7 +324,7 @@ function blog.onClick()
 end
 
 function about.onClick()
-  Http.get("https://gitee.com/gkcoll/celestial-empire-lan-launcher/raw/master/message.json", function(c,r)
+  Http.get("https://cdn.gkcoll.xyz/Celestial-Empire-LAN-Launcher/message.json", function(c,r)
     if c == 200 then
       data=cjson.decode(r)
       AlertDialog.Builder(this)
@@ -348,8 +348,25 @@ function menu.onClick()
     AlertDialog.Builder(this)
     .setTitle("开源仓库")
     .setMessage("开发不易，还请多多支持！快去帮忙点亮一下 star 吧！")
-    .setPositiveButton("GitHub",{onClick=function() openinbr("https://github.com/gkcoll/celestial-empire-lan-launcher") end})
-    .setNeutralButton("Gitee",{onClick=function() openinbr("https://gitee.com/gkcoll/celestial-empire-lan-launcher") end})
+    .setPositiveButton("确定",{onClick=function()
+        items={"GitHub", "GitCode", "Gitee"}
+        AlertDialog.Builder(this)
+        .setTitle("请选择开源仓库")
+        .setItems(items,{onClick=function(l,v)
+
+            if v==0 then
+              openinbr("https://github.com/gkcoll/celestial-empire-lan-launcher")
+            end
+            if v==1 then
+              openinbr("https://gitcode.net/weixin_46066592/celestial-empire-lan-launcher")
+            end
+            if v==2 then
+              openinbr("https://gitee.com/gkcoll/celestial-empire-lan-launcher")
+            end
+        end})
+        .show()
+    end})
+    .setNeutralButton("取消",{onClick=function() print("呜呜呜~你好坏！") end})
     .show()
   end
   m.add("退出程序").onMenuItemClick=function()
