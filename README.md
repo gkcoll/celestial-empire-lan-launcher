@@ -28,11 +28,14 @@ Chinese (Simplified)
 | :--------------------: | :----------------------------------------------------------: |
 |       alp (dir)        |      Storing project packages exported from AndroLua+.       |
 |       img (dir)        |                Storing static picture files.                 |
-|      console.json      | A remote switch, record whether the service is enabled, and update status. |
-|      message.json      | Responsible for remote announcements, quotes, and software self description. |
 | icon.png & welcome.png |             Software icons and startup diagrams.             |
 |        main.lua        |                     Project Master File.                     |
 |       layout.aly       |                    Software Layout File.                     |
+
+## Remote Links
+
+message.json: https://cdn.gkcoll.xyz/Celestial-Empire-LAN-Launcher/message.json
+console.json: https://cdn.gkcoll.xyz/Celestial-Empire-LAN-Launcher/console.json
 
 ## LICENSE
 
