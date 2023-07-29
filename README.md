@@ -34,7 +34,7 @@ Chinese (Simplified)
 
 ## Remote Links
 
-message.json: https://cdn.gkcoll.xyz/Celestial-Empire-LAN-Launcher/message.json
+message.json: https://cdn.gkcoll.xyz/Celestial-Empire-LAN-Launcher/message.json  
 console.json: https://cdn.gkcoll.xyz/Celestial-Empire-LAN-Launcher/console.json
 
 ## LICENSE
